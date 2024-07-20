@@ -1,0 +1,20 @@
+.HoverdDiv{
+    visibility: hidden;
+    transition-duration: 600ms;
+}
+.HoverdImg:hover ~ .HoverdDiv , .HoverdDiv:hover{
+    visibility: visible;
+    transition-duration: 600ms;
+}
+.Hoverdbutton{
+    visibility: hidden;
+    transition-duration: 600ms;
+}
+.HoverdImg:hover ~ .Hoverdbutton , .parentDiv:has(.HoverdDiv:hover) > .Hoverdbutton{
+    visibility: visible;
+    transition-duration: 200ms;
+}
+
+.Hoverdbutton:hover ~ .HoverdDiv{
+    visibility: invisible;
+}
