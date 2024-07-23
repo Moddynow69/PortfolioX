@@ -103,13 +103,13 @@ export default function Globe({
   return (
     <div
       className={cn(
-        "absolute mx-auto aspect-[1/1] w-full max-w-[600px]",
+        "absolute mx-auto aspect-[1/1] w-full hidden sm:block max-w-[650px]  hover:scale-105 transition-transform duration-300 bg-blend-overlay ",
         className,
       )}
     >
       <canvas
         className={cn(
-          "h-full w-full opacity-0 transition-opacity duration-500 [contain:layout_paint_size]",
+          "h-full w-full opacity-0 transition-opacity duration-500 [contain:layout_paint_size] rounded-full",
         )}
         ref={canvasRef}
         onPointerDown={(e) =>
